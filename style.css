@@ -1,0 +1,1738 @@
+/* =========================================
+   ANTI-BOUE
+   DESIGN PROFESSIONNEL
+   Couleurs : Vert + Blanc + Noir
+========================================= */
+
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+    --vert: #16a34a;
+    --vert-fonce: #087f3d;
+    --vert-clair: #dcfce7;
+
+    --noir: #111827;
+    --gris: #6b7280;
+    --gris-clair: #f3f4f6;
+
+    --blanc: #ffffff;
+
+    --ombre:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+
+    --rayon: 16px;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f7faf8;
+
+    color: var(--noir);
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+
+    height: 76px;
+
+    background: var(--blanc);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 2px 15px rgba(0,0,0,0.06);
+}
+
+
+/* LOGO */
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    color: var(--noir);
+}
+
+.logo span {
+
+    color: var(--vert);
+
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.navbar a {
+
+    color: #333;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+
+    color: var(--vert);
+
+}
+
+
+/* MENU MOBILE */
+
+.menu-btn {
+
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    font-size: 28px;
+
+    color: var(--noir);
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height: 650px;
+
+    position: relative;
+
+    background-image:
+
+        url("images/couvre-moteur/modele-01.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* OVERLAY */
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.82),
+            rgba(0,0,0,0.35),
+            rgba(22,163,74,0.15)
+        );
+}
+
+
+/* CONTENU HERO */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 760px;
+
+    margin-left: 8%;
+
+    color: white;
+
+    padding: 60px 20px 60px 0;
+}
+
+
+/* PETIT TITRE */
+
+.petit-titre {
+
+    color: var(--vert);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* HERO PETIT TITRE BLANC */
+
+.hero .petit-titre {
+
+    color: #86efac;
+}
+
+
+/* TITRE */
+
+.hero h1 {
+
+    font-size:
+        clamp(
+            42px,
+            7vw,
+            76px
+        );
+
+    line-height: 1.02;
+
+    margin: 20px 0;
+}
+
+
+/* DESCRIPTION */
+
+.hero p {
+
+    font-size: 18px;
+
+    color: #eeeeee;
+
+    max-width: 650px;
+
+    line-height: 1.8;
+}
+
+
+/* BOUTONS */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   BOUTONS
+========================================= */
+
+.btn {
+
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-weight: 800;
+
+    transition: 0.3s;
+}
+
+
+/* BOUTON VERT */
+
+.btn-principal {
+
+    background: var(--vert);
+
+    color: white;
+
+    box-shadow:
+        0 7px 20px
+        rgba(22,163,74,0.25);
+}
+
+.btn-principal:hover {
+
+    background: var(--vert-fonce);
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* WHATSAPP */
+
+.btn-whatsapp {
+
+    border: 2px solid white;
+
+    color: white;
+
+    background:
+        rgba(255,255,255,0.08);
+}
+
+.btn-whatsapp:hover {
+
+    background: white;
+
+    color: var(--vert);
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.introduction {
+
+    background: white;
+
+    padding: 85px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+.introduction h2 {
+
+    font-size: 43px;
+
+    line-height: 1.15;
+
+    margin-top: 12px;
+}
+
+
+.introduction > p {
+
+    color: var(--gris);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+
+    padding: 85px 7%;
+}
+
+
+.section-title {
+
+    margin-bottom: 35px;
+}
+
+
+.section-title h2 {
+
+    font-size: 43px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   CATÉGORIES
+========================================= */
+
+.categories {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 16px;
+}
+
+
+.categorie {
+
+    position: relative;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: var(--rayon);
+
+    padding: 25px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        background 0.3s;
+
+    overflow: hidden;
+}
+
+
+.categorie::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 70px;
+
+    height: 70px;
+
+    background:
+        var(--vert-clair);
+
+    border-radius: 50%;
+
+    right: -20px;
+
+    top: -20px;
+
+    z-index: 0;
+}
+
+
+.categorie span,
+.categorie strong,
+.categorie small {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+.categorie span {
+
+    display: block;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+.categorie strong {
+
+    display: block;
+
+    font-size: 16px;
+}
+
+
+.categorie small {
+
+    display: block;
+
+    margin-top: 7px;
+
+    color: var(--gris);
+}
+
+
+/* HOVER */
+
+.categorie:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow: var(--ombre);
+
+    border-color:
+        var(--vert);
+}
+
+
+/* ACTIVE */
+
+.categorie.active {
+
+    background:
+        var(--vert);
+
+    color: white;
+
+    border-color:
+        var(--vert);
+
+    box-shadow:
+        0 12px 30px
+        rgba(22,163,74,0.25);
+}
+
+
+.categorie.active small {
+
+    color:
+        #dcfce7;
+}
+
+
+.categorie.active::after {
+
+    background:
+        rgba(255,255,255,0.15);
+}
+
+
+/* =========================================
+   CATALOGUE
+========================================= */
+
+.catalogue {
+
+    background:
+        #f7faf8;
+}
+
+
+.catalogue-header {
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+}
+
+
+.catalogue-header h2 {
+
+    font-size: 43px;
+
+    margin-top: 10px;
+}
+
+
+#nombre-produits {
+
+    color: var(--gris);
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FILTRES
+========================================= */
+
+.filtres {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 12px;
+
+    margin: 30px 0;
+}
+
+
+.filtres input,
+.filtres select {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: 1px solid #e1e5e2;
+
+    border-radius: 10px;
+
+    background: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.filtres input:focus,
+.filtres select:focus {
+
+    border-color:
+        var(--vert);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(22,163,74,0.10);
+}
+
+
+/* =========================================
+   PRODUITS
+========================================= */
+
+.liste-produits {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fill,
+            minmax(235px,1fr)
+        );
+
+    gap: 24px;
+}
+
+
+/* CARTE */
+
+.produit {
+
+    background: white;
+
+    border-radius:
+        var(--rayon);
+
+    overflow: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 5px 25px
+        rgba(0,0,0,0.05);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.produit:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0,0,0,0.12);
+}
+
+
+/* IMAGE */
+
+.produit-image {
+
+    width: 100%;
+
+    height: 270px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.5s;
+}
+
+
+.produit:hover
+.produit-image {
+
+    transform:
+        scale(1.04);
+}
+
+
+/* CONTENU */
+
+.produit-contenu {
+
+    padding: 20px;
+}
+
+
+/* ÉTIQUETTE */
+
+.etiquette {
+
+    display: inline-block;
+
+    background:
+        var(--vert-clair);
+
+    color:
+        var(--vert-fonce);
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+/* NOM */
+
+.produit h3 {
+
+    font-size: 19px;
+
+    margin: 13px 0 10px;
+
+    line-height: 1.3;
+}
+
+
+/* INFOS */
+
+.info-produit {
+
+    color: var(--gris);
+
+    font-size: 14px;
+
+    margin: 5px 0;
+}
+
+
+/* PRIX */
+
+.prix {
+
+    color:
+        var(--vert-fonce);
+
+    font-size: 19px;
+
+    font-weight: 900;
+
+    margin: 16px 0;
+}
+
+
+/* BOUTON PRODUIT */
+
+.produit .btn {
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   À PROPOS
+========================================= */
+
+.a-propos {
+
+    padding: 90px 7%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #062e18,
+            #0b5d2c
+        );
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.5fr;
+
+    gap: 60px;
+}
+
+
+.a-propos .petit-titre {
+
+    color:
+        #86efac;
+}
+
+
+.a-propos h2 {
+
+    font-size: 43px;
+
+    line-height: 1.15;
+
+    margin-top: 12px;
+}
+
+
+.avantages {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 25px;
+}
+
+
+.avantages div {
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.25);
+
+    padding-top: 20px;
+}
+
+
+.avantages span {
+
+    color:
+        #86efac;
+
+    font-weight: 900;
+
+    font-size: 14px;
+}
+
+
+.avantages h3 {
+
+    margin:
+        14px 0 10px;
+}
+
+
+.avantages p {
+
+    color:
+        #d1fae5;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   APPEL À L'ACTION
+========================================= */
+
+.appel-action {
+
+    margin:
+        75px 7%;
+
+    padding:
+        50px;
+
+    border-radius:
+        var(--rayon);
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #1f2937
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,0.10);
+}
+
+
+.appel-action .petit-titre {
+
+    color:
+        #86efac;
+}
+
+
+.appel-action h2 {
+
+    font-size: 36px;
+
+    margin:
+        10px 0;
+}
+
+
+.appel-action p {
+
+    color:
+        #cbd5e1;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+
+    padding:
+        85px 7%;
+
+    background:
+        #ecfdf5;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.contact h2 {
+
+    font-size: 43px;
+
+    margin:
+        10px 0;
+}
+
+
+.contact p {
+
+    color:
+        var(--gris);
+}
+
+
+/* CONTACT BOX */
+
+.contact-box {
+
+    background:
+        white;
+
+    padding:
+        28px;
+
+    border-radius:
+        var(--rayon);
+
+    min-width:
+        300px;
+
+    box-shadow:
+        var(--ombre);
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap: 12px;
+
+    border-left:
+        5px solid
+        var(--vert);
+}
+
+
+.contact-box strong {
+
+    font-size: 20px;
+}
+
+
+.contact-box a {
+
+    color:
+        var(--vert-fonce);
+
+    text-decoration:
+        none;
+
+    font-weight:
+        bold;
+}
+
+
+.contact-box a:hover {
+
+    text-decoration:
+        underline;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background:
+        #07150d;
+
+    color:
+        #a7b8ad;
+
+    text-align:
+        center;
+
+    padding:
+        28px;
+
+    font-size:
+        13px;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes apparition {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+.hero-content {
+
+    animation:
+        apparition 0.8s ease;
+}
+
+
+/* =========================================
+   TABLETTE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .categories {
+
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .header {
+
+        padding:
+            0 5%;
+    }
+
+
+    .menu-btn {
+
+        display:
+            block;
+    }
+
+
+    .navbar {
+
+        display:
+            none;
+
+        position:
+            absolute;
+
+        top:
+            76px;
+
+        left:
+            0;
+
+        right:
+            0;
+
+        background:
+            white;
+
+        padding:
+            25px;
+
+        flex-direction:
+            column;
+
+        gap:
+            20px;
+
+        box-shadow:
+            0 10px 20px
+            rgba(0,0,0,0.08);
+    }
+
+
+    .navbar.active {
+
+        display:
+            flex;
+    }
+
+
+    .hero {
+
+        min-height:
+            600px;
+    }
+
+
+    .hero-content {
+
+        margin-left:
+            5%;
+
+        padding-right:
+            5%;
+    }
+
+
+    .introduction {
+
+        grid-template-columns:
+            1fr;
+
+        padding:
+            65px 5%;
+    }
+
+
+    .introduction h2 {
+
+        font-size:
+            36px;
+    }
+
+
+    .section {
+
+        padding:
+            65px 5%;
+    }
+
+
+    .section-title h2,
+    .catalogue-header h2 {
+
+        font-size:
+            36px;
+    }
+
+
+    .categories {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .filtres {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .a-propos {
+
+        grid-template-columns:
+            1fr;
+
+        padding:
+            65px 5%;
+    }
+
+
+    .a-propos h2 {
+
+        font-size:
+            36px;
+    }
+
+
+    .avantages {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .appel-action {
+
+        margin:
+            50px 5%;
+
+        padding:
+            35px;
+
+        display:
+            block;
+    }
+
+
+    .appel-action .btn {
+
+        margin-top:
+            22px;
+    }
+
+
+    .contact {
+
+        padding:
+            65px 5%;
+
+        display:
+            block;
+    }
+
+
+    .contact-box {
+
+        margin-top:
+            25px;
+    }
+
+}
+
+
+/* =========================================
+   PETIT TÉLÉPHONE
+========================================= */
+
+@media (max-width: 430px) {
+
+    .logo {
+
+        font-size:
+            21px;
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            42px;
+    }
+
+
+    .hero p {
+
+        font-size:
+            16px;
+    }
+
+
+    .hero-buttons {
+
+        flex-direction:
+            column;
+    }
+
+
+    .hero-buttons .btn {
+
+        text-align:
+            center;
+    }
+
+
+    .categories {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .produit-image {
+
+        height:
+            250px;
+    }
+
+
+    .appel-action h2 {
+
+        font-size:
+            30px;
+    }
+
+}
+/* =========================================
+   GALERIE PHOTOS
+========================================= */
+
+.produit-image-container {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.produit-image-container .produit-image {
+    height: 100%;
+}
+
+.nombre-photos {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.voir-galerie {
+    position: absolute;
+
+    bottom: 15px;
+    left: 15px;
+
+    background: rgba(22, 163, 74, 0.95);
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* BOUTONS PRODUIT */
+
+.boutons-produit {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+}
+
+.btn-galerie {
+    border: 1px solid #16a34a;
+
+    background: white;
+
+    color: #15803d;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+.btn-galerie:hover {
+    background: #dcfce7;
+}
+
+
+/* =========================================
+   FENÊTRE GALERIE
+========================================= */
+
+.galerie {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: none;
+}
+
+.galerie.active {
+    display: block;
+}
+
+.galerie-fond {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(0, 0, 0, 0.88);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+.galerie-contenu {
+    position: relative;
+
+    width: min(1000px, 95vw);
+
+    max-height: 95vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* IMAGE */
+
+.image-galerie {
+    max-width: 90vw;
+
+    max-height: 65vh;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 50px
+        rgba(0,0,0,0.5);
+}
+
+
+/* FERMER */
+
+.galerie-fermer {
+    position: absolute;
+
+    right: 0;
+
+    top: -45px;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #111;
+
+    font-size: 30px;
+
+    line-height: 30px;
+
+    cursor: pointer;
+}
+
+
+/* BOUTONS GAUCHE / DROITE */
+
+.galerie-precedent,
+.galerie-suivant {
+    position: absolute;
+
+    top: 40%;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #16a34a;
+
+    color: white;
+
+    font-size: 40px;
+
+    line-height: 30px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.galerie-precedent:hover,
+.galerie-suivant:hover {
+    background: #15803d;
+
+    transform: scale(1.08);
+}
+
+.galerie-precedent {
+    left: 10px;
+}
+
+.galerie-suivant {
+    right: 10px;
+}
+
+
+/* INFORMATIONS */
+
+.infos-galerie {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    color: white;
+
+    text-align: center;
+}
+
+.infos-galerie strong {
+    font-size: 20px;
+}
+
+.infos-galerie p {
+    color: #d1d5db;
+
+    margin: 4px 0;
+}
+
+
+/* MINIATURES */
+
+.miniatures-galerie {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 15px;
+
+    max-width: 90vw;
+
+    overflow-x: auto;
+
+    padding: 5px;
+}
+
+.miniature {
+
+    flex: 0 0 65px;
+
+    width: 65px;
+
+    height: 65px;
+
+    padding: 0;
+
+    border: 2px solid transparent;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    background: white;
+}
+
+.miniature img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.miniature.active {
+
+    border-color: #16a34a;
+
+}
+
+
+/* =========================================
+   GALERIE SUR TÉLÉPHONE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .produit-image-container {
+        height: 250px;
+    }
+
+    .boutons-produit {
+        grid-template-columns: 1fr;
+    }
+
+    .image-galerie {
+        max-height: 58vh;
+    }
+
+    .galerie-precedent,
+    .galerie-suivant {
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 32px;
+    }
+
+    .galerie-precedent {
+        left: 0;
+    }
+
+    .galerie-suivant {
+        right: 0;
+    }
+
+    .galerie-fermer {
+        top: -5px;
+
+        right: 0;
+    }
+
+    .miniature {
+        width: 55px;
+
+        height: 55px;
+
+        flex-basis: 55px;
+    }
+
+}
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+    background-color: #25D366;
+    color: white;
+    
+    padding: 14px 20px;
+    border-radius: 50px;
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    
+    z-index: 9999;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}

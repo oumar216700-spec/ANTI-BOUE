@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anti-Boue | Tapis & Accessoires</title>
+
+    <meta name="description"
+          content="Anti-Boue - Tapis et accessoires pour motos et voitures à Conakry.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            ANTI<span>-BOUE</span>
+        </div>
+
+        <nav class="navbar">
+
+            <a href="#accueil">Accueil</a>
+
+            <a href="#categories">Catégories</a>
+
+            <a href="#produits">Produits</a>
+
+            <a href="#apropos">À propos</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <button class="menu-btn" onclick="ouvrirMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ================= ACCUEIL ================= -->
+
+    <section id="accueil" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="petit-titre">
+                CONAKRY • MATAM • CARRIÈRE CENTRE
+            </p>
+
+            <h1>
+                Le style et la protection
+                pour votre véhicule ou moto.
+            </h1>
+
+            <p>
+                Découvrez nos tapis et accessoires pour motos
+                et voitures avec plusieurs modèles, couleurs
+                et qualités disponibles.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#produits" class="btn btn-principal">
+                    Voir les produits
+                </a>
+
+                <a
+                    href="https://wa.me/224626389339?text=Bonjour%20Anti-Boue%2C%20je%20souhaite%20voir%20vos%20produits."
+                    target="_blank"
+                    class="btn btn-whatsapp">
+
+                    WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRODUCTION ================= -->
+
+    <section class="introduction">
+
+        <div>
+
+            <p class="petit-titre">
+                ANTI-BOUE
+            </p>
+
+            <h2>
+                Des modèles pour tous les goûts
+            </h2>
+
+        </div>
+
+        <p>
+
+            Choisissez une catégorie, recherchez votre modèle,
+            filtrez par couleur ou qualité et contactez-nous
+            directement pour commander ou réserver.
+
+        </p>
+
+    </section>
+
+
+    <!-- ================= CATÉGORIES ================= -->
+
+    <section id="categories" class="section">
+
+        <div class="section-title">
+
+            <p class="petit-titre">
+                NOS CATÉGORIES
+            </p>
+
+            <h2>
+                Choisissez votre catégorie
+            </h2>
+
+        </div>
+
+
+        <div class="categories">
+
+            <button
+                class="categorie active"
+                data-category="Tous">
+
+                <span>✨</span>
+
+                <strong>Tous</strong>
+
+                <small>
+                    Voir tous les produits
+                </small>
+
+            </button>
+
+
+            <button
+                class="categorie"
+                data-category="Couvre-moteur">
+
+                <span>🏍️</span>
+
+                <strong>Couvre-moteur</strong>
+
+                <small>
+                    Plusieurs modèles
+                </small>
+
+            </button>
+
+
+            <button
+                class="categorie"
+                data-category="Garde-boue">
+
+                <span>🛞</span>
+
+                <strong>Garde-boue</strong>
+
+                <small>
+                    Plusieurs modèles
+                </small>
+
+            </button>
+
+
+            <button
+                class="categorie"
+                data-category="Tendaires">
+
+                <span>🔧</span>
+
+                <strong>Tendaires</strong>
+
+                <small>
+                    Plusieurs modèles
+                </small>
+
+            </button>
+
+
+            <button
+                class="categorie"
+                data-category="Pieds motos">
+
+                <span>🏍️</span>
+
+                <strong>Pieds motos</strong>
+
+                <small>
+                    Plusieurs modèles
+                </small>
+
+            </button>
+
+
+            <button
+                class="categorie"
+                data-category="Tapis voiture">
+
+                <span>🚗</span>
+
+                <strong>Tapis voiture</strong>
+
+                <small>
+                    Plusieurs modèles
+                </small>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUITS ================= -->
+
+    <section id="produits" class="section catalogue">
+
+        <div class="catalogue-header">
+
+            <div>
+
+                <p class="petit-titre">
+                    CATALOGUE
+                </p>
+
+                <h2>
+                    Nos produits
+                </h2>
+
+            </div>
+
+            <span id="nombre-produits">
+                0 produit
+            </span>
+
+        </div>
+
+
+        <!-- RECHERCHE + FILTRES -->
+
+        <div class="filtres">
+
+            <input
+                type="search"
+                id="recherche"
+                placeholder="🔎 Rechercher un modèle...">
+
+
+            <select id="filtre-qualite">
+
+                <option value="Toutes">
+                    Toutes les qualités
+                </option>
+
+                <option value="Standard">
+                    Standard
+                </option>
+
+                <option value="Premium">
+                    Premium
+                </option>
+
+                <option value="Haute qualité">
+                    Haute qualité
+                </option>
+
+            </select>
+
+
+            <select id="filtre-couleur">
+
+                <option value="Toutes">
+                    Toutes les couleurs
+                </option>
+
+                <option value="Rouge">
+                    Rouge
+                </option>
+
+                <option value="Bleu">
+                    Bleu
+                </option>
+
+                <option value="Noir">
+                    Noir
+                </option>
+
+                <option value="Jaune">
+                    Jaune
+                </option>
+
+                <option value="Multicolore">
+                    Multicolore
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- LES PRODUITS SERONT AFFICHÉS ICI -->
+
+        <div
+            id="liste-produits"
+            class="liste-produits">
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= À PROPOS ================= -->
+
+    <section id="apropos" class="a-propos">
+
+        <div>
+
+            <p class="petit-titre">
+                POURQUOI ANTI-BOUE ?
+            </p>
+
+            <h2>
+                Un catalogue adapté à vos besoins.
+            </h2>
+
+        </div>
+
+
+        <div class="avantages">
+
+            <div>
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Beaucoup de choix
+                </h3>
+
+                <p>
+                    Plusieurs modèles, couleurs et qualités
+                    dans chaque catégorie.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Commande simple
+                </h3>
+
+                <p>
+                    Choisissez votre modèle et commandez
+                    directement sur WhatsApp.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Réservation
+                </h3>
+
+                <p>
+                    Vous pouvez réserver votre modèle
+                    directement avec nous.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT / CTA ================= -->
+
+    <section class="appel-action">
+
+        <div>
+
+            <p class="petit-titre">
+                BESOIN D'UN MODÈLE ?
+            </p>
+
+            <h2>
+                Écrivez-nous sur WhatsApp.
+            </h2>
+
+            <p>
+                Envoyez-nous le modèle ou la photo
+                qui vous intéresse.
+            </p>
+
+        </div>
+
+
+        <a
+            href="https://wa.me/224626389339?text=Bonjour%20Anti-Boue%20%F0%9F%91%8B%0AJe%20cherche%20un%20mod%C3%A8le%20de%20tapis."
+            target="_blank"
+            class="btn btn-principal">
+
+            Commander / Réserver
+
+        </a>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <div>
+
+            <p class="petit-titre">
+                CONTACT
+            </p>
+
+            <h2>
+                Anti-Boue
+            </h2>
+
+            <p>
+                📍 Conakry — Matam, Carrière Centre
+            </p>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <strong>
+                📞 +224 626 38 93 39
+            </strong>
+
+            <a
+                href="https://wa.me/224626389339?text=Bonjour%20Anti-Boue%20%F0%9F%91%8B"
+                target="_blank">
+
+                Discuter sur WhatsApp →
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Anti-Boue — Tapis & accessoires
+            pour motos et voitures.
+        </p>
+
+    </footer>
+
+
+
+<a href="https://wa.me/224623006342?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20un%20tapis%20Anti-Boue."
+   class="whatsapp-btn"
+   target="_blank">
+    Commander sur WhatsApp
+</a>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
